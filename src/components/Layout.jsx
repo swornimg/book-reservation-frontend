@@ -1,8 +1,11 @@
 import React from 'react'
+import Sidebar from './Sidebar.jsx';
 
 const Layout = () => {
     return (
-        <div>Layout</div>
+        <div className='container'>
+            <Sidebar />
+        </div>
     )
 }
 
