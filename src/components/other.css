@@ -1,0 +1,40 @@
+.TrendingBooks {
+    display: flex;
+    flex-direction: column;
+}
+
+.TrendingBooks-Title {
+    display: flex;
+
+    align-items: center;
+}
+
+.TrendingBooks-Title p {
+    font-size: 1.5rem;
+
+}
+
+.TrendingBooks-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: row;
+    width: 1/5;
+    padding-top: 1rem;
+}
+
+.TrendingBooks-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TrendingBooks-li img {
+    width: 40%;
+
+}
+
+.TrendingBooks-ul h3 {
+    padding-top: 0.6rem;
+}

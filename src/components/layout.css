@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebarCol {
+    width: 20%;
+    height: 95 vh;
+    display: flex;
+    flex-direction: column;
+    margin: 1.4rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mainpageCol {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 96%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 1.4rem 0rem 1.4rem 0rem;
+}
+
+
+.navbar input {
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    background-color: bisque;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-identity {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-name {
+    font-size: 1.2rem;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.navbar-img img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.midpagecol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 96%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 0rem 0rem 1.4rem 0rem;
+}
