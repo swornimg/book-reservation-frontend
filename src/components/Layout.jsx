@@ -10,7 +10,7 @@ import Text from './Text.jsx';
 
 const Layout = () => {
     return (
-        <div className='container'>
+        <div className='layoutContainer'>
             <div className='sidebarCol'>
                 <Sidebar />
             </div>
