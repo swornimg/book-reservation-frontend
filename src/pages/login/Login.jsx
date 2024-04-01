@@ -3,6 +3,7 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import login from "../../assets/icons/login.png";
 import "./login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -15,7 +16,7 @@ const Login = () => {
           <div className="wrapper">
             <h1>Sign In</h1>
             <p className="text">
-              Don't have an account? <a>Sign Up</a>
+              Don't have an account? <Link>Sign Up</Link>
             </p>
             <Form.Label>Email Address</Form.Label>
             <Form.Control
@@ -25,7 +26,7 @@ const Login = () => {
             />
             <Form.Label>Password </Form.Label>
             <Form.Control type="password" />
-            <p className="text">Forgot your password?</p>
+            <Link className="text">Forgot your password?</Link>
             <Button>Sign in</Button>
           </div>
         </Col>

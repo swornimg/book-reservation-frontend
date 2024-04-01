@@ -1,0 +1,33 @@
+.container {
+    background-color: rgb(54, 241, 241);
+}
+
+.row {
+    background-color: #CCE6FB;
+}
+
+.text {
+    font-style: italic;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #DEEFFC;
+    padding: 2rem;
+    height: 100%;
+    border-radius: 20px;
+    width: 70%;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input.form-control {
+    background-color: #CCE6FB;
+    margin-bottom: 1rem;
+}
+
+.img {
+    margin: 0 auto;
+}
