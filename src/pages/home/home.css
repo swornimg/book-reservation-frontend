@@ -1,0 +1,10 @@
+.HomeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0.6rem 0rem 0.6rem 0rem;
+}

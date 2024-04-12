@@ -44,7 +44,7 @@ const TopTextbook = () => {
     return (
         <div className='TrendingBooks'>
             <div className='TrendingBooks-Title'>
-                <LocalFireDepartmentOutlinedIcon /> <p>Trending</p>
+                <LocalFireDepartmentOutlinedIcon /> <p>Top TextBooks</p>
             </div>
 
             <ul className='TrendingBooks-ul'>
