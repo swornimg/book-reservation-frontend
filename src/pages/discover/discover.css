@@ -1,0 +1,48 @@
+.DiscoverContainer {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0.6rem 0rem 0.6rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.DiscoverContainer h1 {
+    padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+
+}
+
+.card-img-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Discovercard-text {
+    padding-top: 0.4rem;
+}
+
+.DiscoverBooks {
+    display: flex;
+    padding: 0rem 0.8rem 0rem 0.8rem;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.DiscoverBooks img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+.Discovercard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    width: 20%;
+}

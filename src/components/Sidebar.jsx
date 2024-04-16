@@ -9,19 +9,22 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 import PhoneForwardedOutlinedIcon from '@mui/icons-material/PhoneForwardedOutlined';
 import './sidebar.css';
+import { Link } from 'react-router-dom';
 
 const navItems = [
     {
-        text: "Menu",
+        text: "My Menu",
         icon: null
     },
     {
         text: "Home",
-        icon: <HomeOutlinedIcon />
+        icon: <HomeOutlinedIcon />,
+        link: '/',
     },
     {
         text: "Discover",
-        icon: <ExploreOutlinedIcon />
+        icon: <ExploreOutlinedIcon />,
+        link: '/discover',
     },
     {
         text: "My Activity",
@@ -29,31 +32,37 @@ const navItems = [
     },
     {
         text: "Reading",
-        icon: <RemoveRedEyeOutlinedIcon />
+        icon: <RemoveRedEyeOutlinedIcon />,
+        link: '/reading',
     },
     {
         text: "Want to Read",
-        icon: <BookmarkAddOutlinedIcon />
+        icon: <BookmarkAddOutlinedIcon />,
+        link: '/wanttoread',
     },
     {
         text: "Completed",
-        icon: <TaskAltOutlinedIcon />
+        icon: <TaskAltOutlinedIcon />,
+        link: '/completed',
     },
     {
-        text: "Settings",
+        text: "My Settings",
         icon: null
     },
     {
         text: "My Profile",
-        icon: <PersonOutlineOutlinedIcon />
+        icon: <PersonOutlineOutlinedIcon />,
+        link: '/myprofile',
     },
     {
         text: "FAQs",
-        icon: <LiveHelpOutlinedIcon />
+        icon: <LiveHelpOutlinedIcon />,
+        link: '/faqs',
     },
     {
         text: "Contact us",
-        icon: <PhoneForwardedOutlinedIcon />
+        icon: <PhoneForwardedOutlinedIcon />,
+        link: '/contactus',
     },
 
 
@@ -66,14 +75,16 @@ const Sidebar = () => {
                 <img src={logo} alt="logo" />
             </div>
             <div className='nav-link'>
-                {navItems.map(({ text, icon }) => {
+                {navItems.map(({ text, icon, link }) => {
                     return (
-                        <div key={text} className='sidebar-menu' style={{ fontSize: icon ? '22px' : '30px', padding: icon ? '0.2rem 0rem 0.2rem 0rem' : '0.8rem 0rem 0.8rem 0rem ' }}>
+                        <div key={text} className='sidebar-menu' style={{ fontSize: icon ? '20px' : '22px', padding: icon ? '0.1rem 0rem 0.1rem 0rem' : '0.6rem 0rem 0.6rem 0rem ' }}>
                             <div className='sidebar-icon'>
                                 {icon}
                             </div>
                             <div className='sidebar-link'>
-                                {text}
+                                <Link to={link}>
+                                    {text}
+                                </Link>
                             </div>
                         </div>
                     )

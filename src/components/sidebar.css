@@ -8,7 +8,7 @@
 }
 
 .logo img {
-    width: 100%;
+    width: 80%;
 
 }
 
@@ -21,6 +21,12 @@
     transition: all 0.3s ease;
     flex-direction: column;
     padding: 0rem 0.4rem 0rem 0.4rem;
+}
+
+.nav-link a {
+    color: #000000;
+    text-decoration: none;
+
 }
 
 .sidebar-menu {

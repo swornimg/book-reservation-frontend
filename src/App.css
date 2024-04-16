@@ -2,18 +2,7 @@
   color: black;
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-  backdrop-filter: blur(20px);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  width: 95.5%;
-}
-
-.footer p {
-  font-size: 1.4rem;
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }

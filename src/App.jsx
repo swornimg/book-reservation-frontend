@@ -12,6 +12,7 @@ import Completed from "./pages/completed/Completed.jsx";
 import Profile from "./pages/profile/Profile.jsx";
 import FAQs from "./pages/faqs/FAQs.jsx";
 import Contactus from "./pages/contactus/Contactus.jsx";
+import Book from "./pages/book/Book.jsx";
 
 function App() {
   return (
@@ -27,10 +28,14 @@ function App() {
             <Route path="/myprofile" element={<Profile />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/contactus" element={<Contactus />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/book/:id" element={<Book />} />
+            <Route path="*" element={<h1>Not Found</h1>} />
           </Route>
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+
         </Routes>
+
       </BrowserRouter>
     </div>
   );

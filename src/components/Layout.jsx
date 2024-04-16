@@ -2,29 +2,23 @@ import React from 'react'
 import Sidebar from './Sidebar.jsx';
 import './layout.css';
 import Footer from './Footer.jsx';
+import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar.jsx';
-import Trending from './Trending.jsx';
-import TopTextbook from './TopTextbook.jsx';
-import Text from './Text.jsx';
-
 
 const Layout = () => {
     return (
+
         <div className='layoutContainer'>
             <div className='sidebarCol'>
                 <Sidebar />
             </div>
-            <div className='mainpageCol'>
+            <div className='mainpagecol'>
                 <Navbar />
-                <div className='midpagecol'>
-                    <Text />
-                    <Trending />
-                    <TopTextbook />
-                </div>
-
+                <Outlet />
                 <Footer />
             </div>
         </div>
+
     )
 }
 
