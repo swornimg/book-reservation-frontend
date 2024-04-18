@@ -71,19 +71,20 @@ const Register = () => {
     <Container fluid bsPrefix="container">
       {success ? (
         <Row>
-          <p>Registration Successful</p>
-          {/* <Link to={login}>Sign in</Link>{" "} */}
+          <p className="text">
+            Already have an account? <Link to="/login">Login</Link>
+          </p>
         </Row>
       ) : (
         <section>
-          (<p className="error">{error}</p>)
           <Row bsPrefix="row">
             <Col bsPrefix="col">
               <div className="wrapper">
                 <h1>Sign Up</h1>
                 <p className="text">
-                  Already have an account? <Link>Sign in</Link>
+                  Already have an account? <Link to="/login">Log in</Link>
                 </p>
+                <p className="error">{error}</p>
                 <Form onSubmit={handleSubmit}>
                   <Form.Control
                     bsPrefix="form-control"

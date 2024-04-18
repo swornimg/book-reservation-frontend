@@ -28,3 +28,10 @@ input.form-control {
     background-color: #CCE6FB;
     margin-bottom: 1rem;
 }
+
+.error {
+    color: red;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 5px auto;
+}
