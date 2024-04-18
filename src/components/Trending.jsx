@@ -14,35 +14,35 @@ const Trendingbooks = [
         title: 'Book 1',
         author: 'Author 1',
         image: image1,
-        publishedDate: '2022-01-01'
+        publishedDate: '2022'
     },
     {
         id: 2,
         title: 'Book 2',
         author: 'Author 2',
         image: image2,
-        publishedDate: '2022-02-01'
+        publishedDate: '2023'
     },
     {
         id: 3,
         title: 'Book 3',
         author: 'Author 3',
         image: image3,
-        publishedDate: '2022-03-01'
+        publishedDate: '2021'
     },
     {
         id: 4,
         title: 'Book 3',
         author: 'Author 3',
         image: image4,
-        publishedDate: '2022-03-01'
+        publishedDate: '2023'
     },
     {
         id: 5,
         title: 'Book 3',
         author: 'Author 3',
         image: image5,
-        publishedDate: '2022-03-01'
+        publishedDate: '2024'
     }
 ];
 
@@ -52,26 +52,23 @@ const Trending = () => {
             <div className='TrendingBooks-Title'>
                 <LocalFireDepartmentOutlinedIcon /> <p>Trending Books</p>
             </div>
-            <Link to='/another-page' id='trending-books-link'>
-                <div className='TrendingBooks-ul'>
-                    {Trendingbooks.map((book, index) => (
-                        <li key={index} className='TrendingBooks-li'>
-                            <Link to={`/book/${book.id}`} id={`book-${book.id}`}>
-                                <img src={book.image} alt={book.title} />
-                                <div className="TrendignBooksDetails">
-                                    <h3>{book.title}</h3>
-                                    <div>
-                                        Author: {book.author}
-                                    </div>
-                                    <div>
-                                        Published Date: {book.publishedDate}
-                                    </div>
+            <div className='TrendingBooks-ul'>
+                {Trendingbooks.map((book, index) => (
+                    <li key={index} className='TrendingBooks-li'>
+                        <Link to={`/book/${book.id}`} id={`book-${book.id}`}>
+                            <img src={book.image} alt={book.title} />
+
+                            <div className="TrendignBooksDetails">
+                                <h3>{book.title}</h3>
+                                <div>
+                                    {book.author} |  {book.publishedDate}
                                 </div>
-                            </Link>
-                        </li>
-                    ))}
-                </div>
-            </Link>
+                            </div>
+                        </Link>
+
+                    </li>
+                ))}
+            </div>
         </div>
     )
 }

@@ -14,10 +14,11 @@
     border-radius: 10px;
     height: 2.2rem;
     border: none;
-    background-color: bisque;
+    background-color: #ebebeb;
     text-align: center;
     font-size: 1.4rem;
     margin: 0rem 2rem 0rem 2rem;
+
 }
 
 .navbar-icons {
