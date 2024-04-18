@@ -8,6 +8,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 0.6rem 0rem 0.6rem 0rem;
     padding: 1rem 0rem 1rem 0rem;
+    
 }
 
 .DiscoverContainer h1 {
@@ -31,11 +32,17 @@
     width: 100%;
     flex-wrap: wrap;
     gap: 10px;
+    
+    
 }
 
 .DiscoverBooks img {
-    width: 80%;
+    width: 50%;
     border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .Discovercard {
