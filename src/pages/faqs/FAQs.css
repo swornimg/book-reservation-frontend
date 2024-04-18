@@ -1,0 +1,61 @@
+.FAQContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    width: 99%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0.6rem 0rem 0.6rem 0rem;
+    padding: 1rem;
+    height: 98vh;
+}
+
+.FAQImageSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.FAQImageSide img {
+    width: 70%;
+}
+
+.FAQDiscriptionSide {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.FAQQuestions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.FAQDiscriptionSide h1 {
+    padding: 0rem 0rem 1rem 0rem;
+    font-weight: 800;
+}
+
+.FAQQandA {
+    width: 100%;
+}
+
+.FAQQandA button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+
+.FAQAns {
+    font-size: 1.2rem;
+    font-weight: 400;
+}

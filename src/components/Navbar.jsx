@@ -7,7 +7,7 @@ import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsAc
 const Navbar = () => {
     return (
         <div className='navbar'>
-            <input placeholder='search' />
+            <input placeholder='Search' />
             <div className="navbar-icons">
                 <ForumOutlinedIcon style={{ fontSize: '30px' }} />
                 <NotificationsActiveOutlinedIcon style={{ fontSize: '30px' }} />

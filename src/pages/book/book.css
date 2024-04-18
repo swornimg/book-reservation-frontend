@@ -1,1 +1,70 @@
-.BookContainer {}
+.BookContainer {
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0.6rem 0rem 0.6rem 0rem;
+    padding: 1rem;
+}
+
+.BookImageSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.BookImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BookImage img {
+    width: 80%;
+    height: auto;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.BookDiscriptionSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.EditBook {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.EditBookButtons {
+    gap: 20px;
+    color: #ffffff !important;
+}
+
+.EditBookButtons a {
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    Margin: 0rem 0.4rem 0rem 0.4rem;
+}
+
+.EditBookButtons svg {
+    color: white !important;
+
+}

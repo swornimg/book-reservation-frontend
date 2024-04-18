@@ -6,6 +6,7 @@ import img3 from '../../assets/books/3.jpg';
 import img4 from '../../assets/books/4.jpg';
 import img5 from '../../assets/books/5.jpg';
 import img6 from '../../assets/books/6.jpg';
+import { Link } from 'react-router-dom';
 
 const books = [
     {
@@ -75,11 +76,18 @@ const books = [
 const Discover = () => {
     return (
         <div className='DiscoverContainer'>
-            <h1>Discover</h1>
+            <div className='DiscoverTopSection'>
+                <h1>Discover</h1>
+                <Link to="/addbook" >
+                    <button className='btn btn-success'> Add Book </button>
+                </Link>
+            </div>
             <div className='DiscoverBooks'>
                 {books.map((book, index) => (
                     <div className="Discovercard" style={{ width: '18rem' }} key={index}>
-                        <img src={book.picture} className="card-img-top" alt={book.title} />
+                        <Link to={`/book/${book.id}`} id={`book-${book.id}`} style={{ paddingLeft: '4px' }}>
+                            <img src={book.picture} className="card-img-top" alt={book.title} />
+                        </Link>
                         <div className="Discovercard-body">
                             <p className="Discovercard-text"> <h3>{book.title}</h3>
                                 <p>Author: {book.author}</p>

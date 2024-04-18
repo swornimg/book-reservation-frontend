@@ -46,3 +46,15 @@
     padding: 0.2rem;
     width: 20%;
 }
+
+.DiscoverTopSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 1.4rem 0.4rem 1.4rem;
+}
+
+.DiscoverTopSection button {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+}

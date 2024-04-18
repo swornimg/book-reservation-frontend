@@ -13,6 +13,10 @@ import Profile from "./pages/profile/Profile.jsx";
 import FAQs from "./pages/faqs/FAQs.jsx";
 import Contactus from "./pages/contactus/Contactus.jsx";
 import Book from "./pages/book/Book.jsx";
+import Addbook from "./pages/book/Addbook.jsx";
+import Dashboard from "./pages/dashboard/Dashboard.jsx";
+import User from "./pages/user/User.jsx";
+import Reserveabook from "./pages/book/Reserveabook.jsx";
 
 function App() {
   return (
@@ -31,7 +35,11 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/book/:id" element={<Book />} />
+            <Route path="/addbook" element={<Addbook />} />
             <Route path="*" element={<h1>Not Found</h1>} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/user" element={<User />} />
+            <Route path="/reserveabook" element={<Reserveabook />} />
           </Route>
 
         </Routes>
