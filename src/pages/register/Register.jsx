@@ -76,7 +76,7 @@ const Register = () => {
         </Row>
       ) : (
         <section>
-          (<p className="error">{error}</p>)
+          <p className="error">{error}</p>
           <Row bsPrefix="row">
             <Col bsPrefix="col">
               <div className="wrapper">
