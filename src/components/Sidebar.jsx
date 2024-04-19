@@ -1,6 +1,8 @@
-import React from 'react';
+import React from 'react'
 import logo from "../assets/logo.png";
+import logo1 from "../assets/logo1.png";
 import { Link } from 'react-router-dom';
+
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
@@ -10,12 +12,12 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 import PhoneForwardedOutlinedIcon from '@mui/icons-material/PhoneForwardedOutlined';
 import './sidebar.css';
+import { Link } from 'react-router-dom';
 
 const navItems = [
     {
         text: "My Menu",
-        icon: null,
-        isTitle: true
+        icon: null
     },
     {
         text: "Home",
@@ -29,8 +31,7 @@ const navItems = [
     },
     {
         text: "My Activity",
-        icon: null,
-        isTitle: true
+        icon: null
     },
     {
         text: "Reading",
@@ -49,8 +50,7 @@ const navItems = [
     },
     {
         text: "My Settings",
-        icon: null,
-        isTitle: true
+        icon: null
     },
     {
         text: "My Profile",
@@ -67,29 +67,33 @@ const navItems = [
         icon: <PhoneForwardedOutlinedIcon />,
         link: '/contactus',
     },
+
+
 ];
 
 const Sidebar = () => {
+
     return (
         <div className='side'>
             <div className='logo'>
-                <img src={logo} alt="logo" />
+                <img src={logo1} alt="logo" />
             </div>
-            <div className='nav-link'>
-                {navItems.map(({ text, icon, link, isTitle }) => {
-                    if (isTitle) {
-                        return <h5 key={text} className='sidebar-menu'>{text}</h5>;
-                    }
+
+
+            <div className='nav-linkcomp'>
+                {navItems.map(({ text, icon, link }) => {
                     return (
-                        <div key={text} className='sidebar-menu'>
+                        <div key={text} className='sidebar-menu' style={{ fontSize: icon ? '20px' : '22px', padding: icon ? '0.1rem 0rem 0.1rem 0rem' : '0.6rem 0rem 0.6rem 0rem ' }}>
                             <div className='sidebar-icon'>
                                 {icon}
                             </div>
                             <div className='sidebar-link'>
-                                {link ? <Link to={link}>{text}</Link> : text}
+                                <Link to={link}>
+                                    {text}
+                                </Link>
                             </div>
                         </div>
-                    );
+                    )
                 })}
             </div>
         </div>

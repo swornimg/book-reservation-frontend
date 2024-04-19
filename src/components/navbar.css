@@ -55,3 +55,15 @@
     width: 40px;
     border-radius: 50%;
 }
+
+@media (max-width: 960px) {
+
+    .navbar-icons,
+    .navbar-identity {
+        display: none;
+    }
+
+    .navbar input {
+        width: 80%;
+    }
+}

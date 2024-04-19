@@ -37,6 +37,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 20%;
+    flex-wrap: wrap;
 }
 
 .TrendingBooks-li img {
