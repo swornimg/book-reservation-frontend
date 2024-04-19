@@ -50,7 +50,7 @@ const TopTextbook = () => {
     return (
         <div className='TrendingBooks' style={{ paddingBottom: '2rem' }}>
             <div className='TrendingBooks-Title'>
-                <LocalFireDepartmentOutlinedIcon /> <p>Trending Books</p>
+                <LocalFireDepartmentOutlinedIcon /> &nbsp; Top Textbooks (This Month)
             </div>
             <Link to='/another-page' id='trending-books-link'>
                 <div className='TrendingBooks-ul'>

@@ -13,8 +13,10 @@
     justify-content: center;
 }
 
-.TrendingBooks-Title p {
+.TrendingBooks-Title {
     font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.6rem 2rem 0.6rem 2rem;
 }
 
 .TrendingBooks-Title svg {

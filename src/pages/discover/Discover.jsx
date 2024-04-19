@@ -90,7 +90,7 @@ const Discover = () => {
                         </Link>
                         <div className="Discovercard-body">
                             <p className="Discovercard-text"> <h3>{book.title}</h3>
-                                <p>Author: {book.author}</p>
+                                Author: {book.author}
                                 <p>Published Date: {book.publishedDate}</p>
                                 <p>{book.detail}</p>
                             </p>

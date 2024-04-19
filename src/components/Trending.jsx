@@ -50,7 +50,7 @@ const Trending = () => {
     return (
         <div className='TrendingBooks'>
             <div className='TrendingBooks-Title'>
-                <LocalFireDepartmentOutlinedIcon /> <p>Trending Books</p>
+                <LocalFireDepartmentOutlinedIcon /> &nbsp; Trending Books
             </div>
             <div className='TrendingBooks-ul'>
                 {Trendingbooks.map((book, index) => (

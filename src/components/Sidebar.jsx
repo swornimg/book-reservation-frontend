@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/logo.png";
+import logo1 from "../assets/logo1.png";
 import { Link } from 'react-router-dom';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
@@ -73,7 +73,7 @@ const Sidebar = () => {
     return (
         <div className='side'>
             <div className='logo'>
-                <img src={logo} alt="logo" />
+                <img src={logo1} alt="logo" />
             </div>
             <div className='nav-link'>
                 {navItems.map(({ text, icon, link, isTitle }) => {

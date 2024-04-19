@@ -8,7 +8,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 0.6rem 0rem 0.6rem 0rem;
     padding: 1rem 0rem 1rem 0rem;
-    
+
 }
 
 .DiscoverContainer h1 {
@@ -32,8 +32,14 @@
     width: 100%;
     flex-wrap: wrap;
     gap: 10px;
-    
-    
+
+
+}
+
+.Discovercard a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .DiscoverBooks img {
@@ -51,7 +57,7 @@
     align-items: center;
     justify-content: center;
     padding: 0.2rem;
-    width: 20%;
+    flex: 20%;
 }
 
 .DiscoverTopSection {
@@ -64,4 +70,12 @@
     font-weight: 600;
     font-size: 1.2rem;
     padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+}
+
+.Discovercard-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
