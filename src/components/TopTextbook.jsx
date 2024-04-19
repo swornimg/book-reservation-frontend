@@ -1,48 +1,48 @@
 import React from 'react'
 import LocalFireDepartmentOutlinedIcon from '@mui/icons-material/LocalFireDepartmentOutlined';
-import image1 from '../assets/books/1.jpg';
-import image2 from '../assets/books/2.jpg';
-import image3 from '../assets/books/3.jpg';
-import image4 from '../assets/books/4.jpg';
-import image5 from '../assets/books/5.jpg';
+import image1 from '../assets/books/7.jpg';
+import image2 from '../assets/books/8.jpg';
+import image3 from '../assets/books/9.jpg';
+import image4 from '../assets/books/10.jpg';
+import image5 from '../assets/books/11.jpg';
 import './other.css'
 import { Link } from 'react-router-dom';
 
 const Trendingbooks = [
     {
         id: 1,
-        title: 'Book 1',
-        author: 'Author 1',
+        title: 'Dysphagia E-Book',
+        author: 'Michael E. Groher',
         image: image1,
-        publishedDate: '2022-01-01'
+        publishedDate: '2020'
     },
     {
         id: 2,
-        title: 'Book 2',
-        author: 'Author 2',
+        title: 'Language Disorders...',
+        author: 'Rhea Paul',
         image: image2,
-        publishedDate: '2022-02-01'
+        publishedDate: '2017'
     },
     {
         id: 3,
-        title: 'Book 3',
-        author: 'Author 3',
+        title: 'The Healthcare Quality...',
+        author: 'Elizabeth R. Ransom',
         image: image3,
-        publishedDate: '2022-03-01'
+        publishedDate: '2022'
     },
     {
         id: 4,
-        title: 'Book 3',
-        author: 'Author 3',
+        title: 'Basic Immunology',
+        author: 'Abul K. Abbas',
         image: image4,
-        publishedDate: '2022-03-01'
+        publishedDate: '2023'
     },
     {
         id: 5,
-        title: 'Book 3',
-        author: 'Author 3',
+        title: 'Books',
+        author: 'Larry McMurtry',
         image: image5,
-        publishedDate: '2022-03-01'
+        publishedDate: '2010'
     }
 ];
 
@@ -59,7 +59,7 @@ const TopTextbook = () => {
                             <Link to={`/book/${book.id}`} id={`book-${book.id}`}>
                                 <img src={book.image} alt={book.title} />
                                 <div className="TrendignBooksDetails">
-                                    <h3>{book.title}</h3>
+                                    <h5>{book.title}</h5>
                                     <div>
                                         {book.author} | {book.publishedDate}
                                     </div>
