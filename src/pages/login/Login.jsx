@@ -83,6 +83,7 @@ const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
+              // Add a link to the Forgot Password page
               <Link className="text">Forgot your password?</Link>
               <Button type="submit">Sign in</Button>
             </Form>
