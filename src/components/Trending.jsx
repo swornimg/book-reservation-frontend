@@ -11,38 +11,38 @@ import { Link } from 'react-router-dom';
 const Trendingbooks = [
     {
         id: 1,
-        title: 'Book 1',
-        author: 'Author 1',
+        title: 'The Decision Book',
+        author: 'Mikael Krogerus',
         image: image1,
-        publishedDate: '2022'
+        publishedDate: '2017'
     },
     {
         id: 2,
-        title: 'Book 2',
-        author: 'Author 2',
+        title: 'Western Philosophy',
+        author: 'Bertrand Russell',
         image: image2,
-        publishedDate: '2023'
+        publishedDate: '1946'
     },
     {
         id: 3,
-        title: 'Book 3',
-        author: 'Author 3',
+        title: 'Prima Facie',
+        author: 'Suzie Miller',
         image: image3,
-        publishedDate: '2021'
+        publishedDate: '2019'
     },
     {
         id: 4,
-        title: 'Book 3',
-        author: 'Author 3',
+        title: 'The Miracle Morning',
+        author: 'Hal Elrod',
         image: image4,
-        publishedDate: '2023'
+        publishedDate: '2012'
     },
     {
         id: 5,
-        title: 'Book 3',
-        author: 'Author 3',
+        title: 'A Memoir of the Craft',
+        author: 'Stephen Hawking',
         image: image5,
-        publishedDate: '2024'
+        publishedDate: '2000'
     }
 ];
 
@@ -59,7 +59,7 @@ const Trending = () => {
                             <img src={book.image} alt={book.title} />
 
                             <div className="TrendignBooksDetails">
-                                <h3>{book.title}</h3>
+                                <h5>{book.title}</h5>
                                 <div>
                                     {book.author} |  {book.publishedDate}
                                 </div>
