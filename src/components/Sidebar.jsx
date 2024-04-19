@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from "../assets/logo.png";
 import logo1 from "../assets/logo1.png";
+import { Link } from 'react-router-dom';
+
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
@@ -11,8 +13,6 @@ import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 import PhoneForwardedOutlinedIcon from '@mui/icons-material/PhoneForwardedOutlined';
 import './sidebar.css';
 import { Link } from 'react-router-dom';
-
-
 
 const navItems = [
     {

@@ -16,7 +16,7 @@
 }
 
 .logo img {
-    width: 80%;
+    width: 90%;
 
 }
 
@@ -41,7 +41,8 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding: 0.1rem 0rem 0.1rem 0.5rem; /* Updated padding */
+    padding: 0.1rem 0rem 0.1rem 0.5rem;
+    /* Updated padding */
 }
 
 .sidebar-icon {
