@@ -14,10 +14,14 @@
 .ProfileImageSide {
     width: 40%;
     padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ProfileImageSide img {
     border-radius: 50%;
+    width: 80%;
 }
 
 .ProfileFormSide {
