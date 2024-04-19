@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../assets/logo.png";
+import logo1 from "../assets/logo1.png";
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
@@ -10,6 +11,8 @@ import LiveHelpOutlinedIcon from '@mui/icons-material/LiveHelpOutlined';
 import PhoneForwardedOutlinedIcon from '@mui/icons-material/PhoneForwardedOutlined';
 import './sidebar.css';
 import { Link } from 'react-router-dom';
+
+
 
 const navItems = [
     {
@@ -69,12 +72,15 @@ const navItems = [
 ];
 
 const Sidebar = () => {
+
     return (
         <div className='side'>
             <div className='logo'>
-                <img src={logo} alt="logo" />
+                <img src={logo1} alt="logo" />
             </div>
-            <div className='nav-link'>
+
+
+            <div className='nav-linkcomp'>
                 {navItems.map(({ text, icon, link }) => {
                     return (
                         <div key={text} className='sidebar-menu' style={{ fontSize: icon ? '20px' : '22px', padding: icon ? '0.1rem 0rem 0.1rem 0rem' : '0.6rem 0rem 0.6rem 0rem ' }}>

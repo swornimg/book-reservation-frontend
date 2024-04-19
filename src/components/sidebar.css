@@ -1,5 +1,13 @@
 .side {
     padding: 20px;
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.8rem 2rem 0.8rem 2rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -12,7 +20,7 @@
 
 }
 
-.nav-link {
+.nav-linkcomp {
     display: flex;
     padding: 0.5rem;
     cursor: pointer;
@@ -23,7 +31,7 @@
     padding: 0rem 0.4rem 0rem 0.4rem;
 }
 
-.nav-link a {
+.nav-linkcomp a {
     color: #000000;
     text-decoration: none;
 
@@ -37,4 +45,19 @@
 
 .sidebar-icon {
     padding: 0.6rem;
+}
+
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #878787;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    left: 300%;
+    top: -10%;
 }
