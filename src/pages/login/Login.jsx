@@ -14,9 +14,9 @@ const Login = () => {
         </Col>
         <Col bsPrefix="col">
           <div className="wrapper">
-            <h1>Sign In</h1>
+            <h1>Login</h1>
             <p className="text">
-              Don't have an account? <Link>Sign Up</Link>
+              Don't have an account? <Link to="/register">Register</Link>
             </p>
             <Form.Label>Email Address</Form.Label>
             <Form.Control
@@ -27,7 +27,7 @@ const Login = () => {
             <Form.Label>Password </Form.Label>
             <Form.Control type="password" />
             <Link className="text">Forgot your password?</Link>
-            <Button>Sign in</Button>
+            <Button>Register</Button>
           </div>
         </Col>
       </Row>

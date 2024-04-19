@@ -11,9 +11,9 @@ const Register = () => {
       <Row bsPrefix="row">
         <Col bsPrefix="col">
           <div className="wrapper">
-            <h1>Sign Up</h1>
+            <h1>Register</h1>
             <p className="text">
-              Already have an account? <Link>Sign in</Link>
+              Already have an account? <Link to="/login">Login</Link>
             </p>
             <Form.Control
               bsPrefix="form-control"
@@ -32,7 +32,7 @@ const Register = () => {
             />
             <Form.Control type="password" placeholder="Password" />
             <Form.Control type="password" placeholder="Confirm Password" />
-            <Button>Sign Up</Button>
+            <Button>Register</Button>
           </div>
         </Col>
         <Col>
